@@ -6,16 +6,21 @@
   <img src="https://img.shields.io/badge/Architecture-DAG%20Pipeline-1F8A70?style=for-the-badge" alt="Architecture">
   <img src="https://img.shields.io/badge/Data%20Purity-100%25-DE9B34?style=for-the-badge" alt="Data Purity">
   <img src="https://img.shields.io/badge/Resilience-Asyncio%20%2B%20Semaphore-E74C3C?style=for-the-badge" alt="Resilience">
+  <a href="https://docs.google.com/spreadsheets/d/1fOCpIeM8WyErLhzr17tkNHduifIYHGOfdKZi1bbZPAE/edit?usp=sharing" target="_blank">
+    <img src="https://img.shields.io/badge/Live%20Demo-Google%20Sheets-34A853?style=for-the-badge&logo=googlesheets&logoColor=white" alt="Google Sheets Live Demo">
+  </a>
   <img src="https://img.shields.io/badge/License-MIT-green?style=for-the-badge" alt="License">
 </p>
 
 ---
 
-## 📊 Quick Links
+## 📊 Live Demo (Google Sheets)
 
-> 🔗 **Generated Dataset:**  
-> **1,009 Pure AI SaaS Tools** formatted perfectly across 36 columns.  
-> 📁 [ai_tools.csv](./ai_tools.csv)
+> 🔗 **Interactive Knowledge Base:**  
+> <a href="https://docs.google.com/spreadsheets/d/1fOCpIeM8WyErLhzr17tkNHduifIYHGOfdKZi1bbZPAE/edit?usp=sharing" target="_blank" rel="noopener noreferrer"><b>Open Live Ingested Dataset in Google Sheets ↗</b></a>
+>
+> Includes exactly **1,009 Pure AI SaaS Tools** formatted perfectly across 36 columns.
+> Also available locally as 📁 [ai_tools.csv](./ai_tools.csv)
 
 ---
 
