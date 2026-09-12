@@ -1,0 +1,34 @@
+name: ToolForge Continuous Evaluation
+
+on:
+  schedule:
+    - cron: '0 0 * * 0' # Run every Sunday at midnight
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+    
+    - name: Set up Python 3.10
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.10'
+        
+    - name: Initialize Database
+      run: python src/utils/db.py
+        
+    - name: Run Pipeline Orchestrator
+      run: python src/pipelines/orchestrator.py
+        
+    - name: Assert Export Volume
+      run: |
+        line_count=$(wc -l < ai_tools.csv)
+        if [ "$line_count" -lt 1001 ]; then
+          echo "ERROR: CSV generated less than 1000 tools."
+          exit 1
+        fi
+        echo "Data gate passed. CSV volume verified."
